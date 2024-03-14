@@ -1,0 +1,139 @@
+{
+  "Routes": [
+    //MicroserviceOne
+    //ControllerName
+    {
+      "UpstreamPathTemplate": "/MicroServiceOneApi/Add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceOneApi/Add",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      //for rate limiting 3sec
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 3,
+        "Limit": 1
+      },
+      "SwaggerKey": "microServiceOne"
+    },
+    {
+      "UpstreamPathTemplate": "/MicroServiceOneApi/Update",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceOneApi/Update",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      //for rate limiting 3sec
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 3,
+        "Limit": 1
+      },
+      "SwaggerKey": "microServiceOne"
+    },
+    {
+      "UpstreamPathTemplate": "/MicroServiceOneApi/GetById",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceOneApi/GetById",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      "SwaggerKey": "microServiceOne"
+    },
+    {
+      "UpstreamPathTemplate": "/MicroServiceOneApi/GetAll",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceOneApi/GetAll",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      "SwaggerKey": "microServiceOne"
+    },
+    //MicroServiceTwo
+    {
+      "UpstreamPathTemplate": "/MicroServiceTwoApi/Add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceTwoApi/Add",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      //for rate limiting 3sec
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 3,
+        "Limit": 1
+      },
+      "SwaggerKey": "microServiceOne"
+    },
+    {
+      "UpstreamPathTemplate": "/MicroServiceTwoApi/Update",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceTwoApi/Update",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      //for rate limiting 3sec
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 3,
+        "Limit": 1
+      },
+      "SwaggerKey": "microServiceOne"
+    },
+    {
+      "UpstreamPathTemplate": "/MicroServiceTwoApi/GetById",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceTwoApi/GetById",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      "SwaggerKey": "microServiceOne"
+    },
+    {
+      "UpstreamPathTemplate": "/MicroServiceTwoApi/GetAll",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/MicroServiceTwoApi/GetAll",
+
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{MicroServiceOne}"
+
+        }
+      ],
+      "SwaggerKey": "microServiceOne"
+    }
+  ]
+}

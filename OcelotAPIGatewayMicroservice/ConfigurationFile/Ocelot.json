@@ -1,0 +1,34 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:9000",
+    "Hosts": {
+
+      "MicroServiceOne": "https://localhost:90001/",
+      "MicroServiceTwo": "https://localhost:9002/"
+      //add other microservices url here
+    }
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "microServiceOne",
+      "Config": [
+        {
+          "Name": "MicroServiceOne.API",
+          "Version": "v1",
+          "Url": "https://localhost:9001/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "microServiceTwo",
+      "Config": [
+        {
+          "Name": "MicroServiceTwo.API",
+          "Version": "v1",
+          "Url": "https://localhost:9002/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+
+}
