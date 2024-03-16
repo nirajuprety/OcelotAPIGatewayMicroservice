@@ -1,4 +1,9 @@
-﻿namespace OcelotAPIGatewayMicroservice.Services
+﻿using Ocelot.DependencyInjection;
+using Ocelot.Cache.CacheManager;
+using Ocelot.Provider.Polly;
+
+
+namespace OcelotAPIGatewayMicroservice.Services
 {
     public static class OcelotService
     {
