@@ -1,4 +1,6 @@
-﻿namespace OcelotAPIGatewayMicroservice.Services
+﻿using Ocelot.Configuration.File;
+
+namespace OcelotAPIGatewayMicroservice.Services
 {
     public class GlobalHosts : Dictionary<string, Uri>
     {
