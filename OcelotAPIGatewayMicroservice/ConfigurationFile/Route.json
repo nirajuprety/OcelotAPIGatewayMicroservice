@@ -107,6 +107,12 @@
         "PeriodTimespan": 3,
         "Limit": 1
       },
+      //for caching 15 sec
+      "FileCacheOptions": {
+        "TtlSeconds": 15,
+        "Region": "europe-central",
+        "Header": "Authorization"
+      },
       "SwaggerKey": "microServiceOne"
     },
     {
